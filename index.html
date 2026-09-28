@@ -1,252 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade — CineScope</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0a0e1a;
-      color: #e2e8f0;
-      line-height: 1.7;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
-      padding: 48px 24px;
-      text-align: center;
-    }
-
-    header .emoji { font-size: 48px; display: block; margin-bottom: 12px; }
-
-    header h1 {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      color: #bfdbfe;
-      font-size: 0.95rem;
-    }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 24px;
-    }
-
-    .card {
-      background: #111827;
-      border: 1px solid #1f2937;
-      border-radius: 12px;
-      padding: 32px;
-      margin-bottom: 24px;
-    }
-
-    .card h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #60a5fa;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .card h2 .icon {
-      width: 32px;
-      height: 32px;
-      background: #1e3a8a;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      flex-shrink: 0;
-    }
-
-    .card p {
-      color: #9ca3af;
-      font-size: 0.95rem;
-      margin-bottom: 12px;
-    }
-
-    .card p:last-child { margin-bottom: 0; }
-
-    .card ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .card ul li {
-      color: #9ca3af;
-      font-size: 0.95rem;
-      padding: 6px 0;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    .card ul li::before {
-      content: "•";
-      color: #3b82f6;
-      position: absolute;
-      left: 0;
-      font-weight: bold;
-    }
-
-    .highlight {
-      background: #1e3a8a22;
-      border: 1px solid #1e3a8a;
-      border-left: 4px solid #3b82f6;
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin: 16px 0;
-    }
-
-    .highlight p {
-      color: #93c5fd !important;
-      margin: 0 !important;
-      font-size: 0.9rem;
-    }
-
-    .updated {
-      text-align: center;
-      color: #4b5563;
-      font-size: 0.85rem;
-      padding: 32px 0 16px;
-    }
-
-    a { color: #60a5fa; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    footer {
-      text-align: center;
-      padding: 24px;
-      color: #374151;
-      font-size: 0.8rem;
-      border-top: 1px solid #1f2937;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — CineScope / Privacy Policy</title>
+<style>
+  :root { --bg:#050510; --card:#0d1220; --border:#1e2d45; --text:#e2e8f0; --muted:#94a3b8; --brand:#00d4ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; color:var(--brand); }
+  h3 { font-size:1rem; margin:20px 0 4px; }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); font-size:.9rem; }
+  a { color:var(--brand); }
+  ul { padding-left:1.2rem; }
+  .langs { display:flex; gap:12px; margin:16px 0 8px; }
+  .langs a { border:1px solid var(--border); background:var(--card); padding:6px 14px; border-radius:999px; text-decoration:none; font-size:.9rem; }
+  section { border-top:1px solid var(--border); margin-top:40px; padding-top:8px; }
+  .box { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin:12px 0; }
+  footer { margin-top:48px; color:var(--muted); font-size:.85rem; }
+</style>
 </head>
 <body>
+<main>
 
-  <header>
-    <span class="emoji">🎬</span>
-    <h1>Política de Privacidade</h1>
-    <p>CineScope — Descoberta de Filmes</p>
-  </header>
+<nav class="langs" aria-label="Idioma / Language">
+  <a href="#pt">Português</a>
+  <a href="#en">English</a>
+</nav>
 
-  <main>
+<!-- ===================== PORTUGUÊS ===================== -->
+<section id="pt" lang="pt-BR" style="border-top:none;margin-top:0;padding-top:0">
+<h1>Política de Privacidade</h1>
+<p class="muted">CineScope — Descoberta de Filmes · Última atualização: setembro de 2026</p>
 
-    <div class="card">
-      <h2><span class="icon">👋</span> Introdução</h2>
-      <p>
-        Esta Política de Privacidade descreve como o aplicativo <strong style="color:#e2e8f0">CineScope</strong>
-        coleta, usa e protege as informações dos seus usuários.
-      </p>
-      <p>
-        Ao usar o CineScope, você concorda com as práticas descritas neste documento.
-        Se não concordar com algum ponto, recomendamos que não utilize o aplicativo.
-      </p>
-    </div>
+<h2>1. Introdução</h2>
+<p>Esta Política de Privacidade explica quais informações o aplicativo <strong>CineScope</strong> trata, por quais serviços elas passam e quais escolhas você tem. O CineScope é um aplicativo gratuito, mantido por um desenvolvedor independente, e exibe anúncios para se manter.</p>
 
-    <div class="card">
-      <h2><span class="icon">📊</span> Dados Coletados</h2>
+<h2>2. O que o aplicativo não faz</h2>
+<ul>
+  <li>Não exige cadastro, login nem criação de conta.</li>
+  <li>Não pede nem coleta seu nome, e-mail, telefone, contatos, fotos, arquivos ou localização precisa.</li>
+  <li>Não mantém servidores próprios com dados de usuários e não vende dados pessoais.</li>
+</ul>
 
-      <div class="highlight">
-        <p>✅ O CineScope <strong>não coleta, armazena nem compartilha</strong> nenhum dado pessoal identificável dos usuários.</p>
-      </div>
+<h2>3. Dados que ficam apenas no seu aparelho</h2>
+<p>Os filmes que você marca como favoritos são gravados somente no armazenamento local do seu aparelho (banco de dados Hive). Esses dados não são enviados a nenhum servidor, são removidos ao desinstalar o aplicativo e podem ser apagados a qualquer momento dentro do app, desfavoritando os filmes.</p>
 
-      <p>O aplicativo acessa apenas:</p>
-      <ul>
-        <li>Informações públicas de filmes fornecidas pela API do TMDB (The Movie Database)</li>
-        <li>Dados de favoritos salvos <strong>localmente no seu dispositivo</strong> — nunca enviados a servidores externos</li>
-      </ul>
-    </div>
+<h2>4. Dados tratados por serviços de terceiros</h2>
+<p>Alguns componentes do aplicativo pertencem a terceiros e coletam informações automaticamente, segundo as políticas de cada um.</p>
 
-    <div class="card">
-      <h2><span class="icon">📱</span> Armazenamento Local</h2>
-      <p>
-        Os filmes marcados como favoritos são armazenados exclusivamente no seu dispositivo,
-        utilizando um banco de dados local (Hive). Esses dados:
-      </p>
-      <ul>
-        <li>Nunca são enviados para servidores externos</li>
-        <li>Nunca são compartilhados com terceiros</li>
-        <li>São removidos automaticamente ao desinstalar o aplicativo</li>
-        <li>Podem ser apagados manualmente dentro do app</li>
-      </ul>
-    </div>
+<h3>4.1 Anúncios — Google AdMob</h3>
+<p>O CineScope usa o Google Mobile Ads SDK para exibir anúncios. Esse SDK coleta e compartilha com o Google: endereço IP (que pode ser usado para estimar a localização geral do aparelho), interações com o aplicativo e com os anúncios (por exemplo, abertura do app e toques), informações de diagnóstico e desempenho, e identificadores do aparelho, incluindo o ID de publicidade do Android. As finalidades são publicidade, análise e prevenção de fraudes. Os dados são transmitidos com criptografia (TLS).</p>
+<p>Saiba mais em <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">como o Google usa informações de apps que usam seus serviços</a>.</p>
 
-    <div class="card">
-      <h2><span class="icon">🌐</span> Acesso à Internet</h2>
-      <p>
-        O CineScope utiliza a internet exclusivamente para buscar informações de filmes
-        (títulos, sinopses, imagens e avaliações) através da API pública do TMDB.
-      </p>
-      <p>
-        Nenhuma informação do usuário é enviada durante essas requisições.
-        Para saber mais sobre as práticas de privacidade do TMDB, acesse:
-        <a href="https://www.themoviedb.org/privacy-policy" target="_blank">themoviedb.org/privacy-policy</a>
-      </p>
-    </div>
+<h3>4.2 Análise de uso — Firebase Analytics</h3>
+<p>Usamos o Firebase Analytics para entender de forma agregada como o aplicativo é usado (por exemplo, quais telas são visualizadas) e melhorá-lo. Ele coleta um identificador da instância do aplicativo, eventos de uso e informações técnicas do aparelho e do app. Mais informações: <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacidade e segurança no Firebase</a>.</p>
 
-    <div class="card">
-      <h2><span class="icon">🔒</span> Segurança</h2>
-      <p>
-        Adotamos boas práticas de desenvolvimento para garantir a segurança do aplicativo:
-      </p>
-      <ul>
-        <li>Comunicação com a API realizada via HTTPS</li>
-        <li>Chaves de API protegidas e não expostas no código-fonte</li>
-        <li>Nenhum dado sensível trafega pela rede</li>
-      </ul>
-    </div>
+<h3>4.3 Informações de filmes — TMDB</h3>
+<p>Títulos, sinopses, imagens, elenco e onde assistir vêm da API do TMDB (The Movie Database). Como em qualquer acesso à internet, o TMDB recebe o endereço IP e dados técnicos da requisição. O aplicativo também envia o idioma e a região (derivados do idioma do aparelho) para mostrar o catálogo adequado. Nenhum dado pessoal seu é enviado por nós ao TMDB. Política do TMDB: <a href="https://www.themoviedb.org/privacy-policy" rel="noopener">themoviedb.org/privacy-policy</a>.</p>
 
-    <div class="card">
-      <h2><span class="icon">👶</span> Crianças</h2>
-      <p>
-        O CineScope não é direcionado a crianças menores de 13 anos e não coleta
-        intencionalmente informações de crianças. O conteúdo exibido é proveniente
-        de uma base de dados pública de filmes.
-      </p>
-    </div>
+<h3>4.4 Google Play</h3>
+<p>Avisos e instalação de atualizações do aplicativo são feitos pelo Google Play, conforme a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.</p>
 
-    <div class="card">
-      <h2><span class="icon">🔄</span> Alterações nesta Política</h2>
-      <p>
-        Esta política pode ser atualizada periodicamente. Quando isso ocorrer,
-        a data de "última atualização" no topo desta página será modificada.
-      </p>
-      <p>
-        Recomendamos revisar esta página ocasionalmente para se manter informado
-        sobre como protegemos suas informações.
-      </p>
-    </div>
+<h2>5. Compartilhamento feito por você</h2>
+<p>Ao tocar em compartilhar, o aplicativo monta um texto e uma imagem do filme no próprio aparelho e os entrega ao menu de compartilhamento do Android. O destino é escolhido por você; nós não recebemos esse conteúdo.</p>
 
-    <div class="card">
-      <h2><span class="icon">✉️</span> Contato</h2>
-      <p>
-        Se tiver dúvidas sobre esta Política de Privacidade, entre em contato:
-      </p>
-      <ul>
-        <li>Desenvolvedor: Christian Alonso</li>
-        <li>E-mail: <a href="mailto:appcinescope@gmail.com">appcinescope@gmail.com</a></li>
-      </ul>
-    </div>
+<h2>6. Suas escolhas sobre anúncios</h2>
+<p>Você pode redefinir ou excluir o ID de publicidade e limitar a personalização de anúncios nas configurações do Android, na seção de anúncios do Google. Ao fazer isso, os anúncios continuam aparecendo, mas deixam de ser personalizados com base nesse identificador.</p>
 
-    <p class="updated">Última atualização: março de 2026</p>
+<h2>7. Retenção e exclusão de dados</h2>
+<p>Como não há contas de usuário, não existe perfil para excluir. Os favoritos locais são apagados ao desinstalar o aplicativo. Os dados tratados pelo Google (AdMob, Firebase, Google Play) e pelo TMDB seguem as políticas e os controles desses serviços.</p>
 
-  </main>
+<h2>8. Segurança</h2>
+<p>A comunicação do aplicativo com a API de filmes e com os serviços de anúncios e análise usa conexões seguras (HTTPS/TLS). Os favoritos permanecem no aparelho.</p>
 
-  <footer>
-    CineScope © 2026 — Todos os direitos reservados
-  </footer>
+<h2>9. Crianças</h2>
+<p>O CineScope não é direcionado a menores de 13 anos e não coleta intencionalmente informações de crianças.</p>
 
+<h2>10. Seus direitos</h2>
+<p>Como o CineScope não mantém contas nem armazena dados pessoais em servidores próprios, não há dados pessoais sob nossa guarda para acessar, corrigir ou excluir. Para informações tratadas pelo Google ou pelo TMDB, use os canais dessas empresas. Se tiver dúvidas sobre esta política ou sobre seus direitos (inclusive com base na LGPD), fale conosco.</p>
+
+<h2>11. Alterações nesta política</h2>
+<p>Podemos atualizar esta política periodicamente. A data de "última atualização" no topo será alterada quando isso ocorrer.</p>
+
+<h2>12. Contato</h2>
+<p>Desenvolvedor: Christian Alonso<br>E-mail: <a href="mailto:appcinescope@gmail.com">appcinescope@gmail.com</a></p>
+</section>
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="muted">CineScope — Movie Discovery · Last updated: September 2026</p>
+
+<h2>1. Introduction</h2>
+<p>This Privacy Policy explains what information the <strong>CineScope</strong> app handles, which services it passes through, and what choices you have. CineScope is a free app maintained by an independent developer and shows ads to support itself.</p>
+
+<h2>2. What the app does not do</h2>
+<ul>
+  <li>It does not require sign-up, login or an account.</li>
+  <li>It does not ask for or collect your name, email, phone number, contacts, photos, files or precise location.</li>
+  <li>It does not run its own servers with user data and does not sell personal data.</li>
+</ul>
+
+<h2>3. Data that stays on your device</h2>
+<p>Movies you mark as favorites are stored only in your device's local storage (Hive database). This data is never sent to any server, is removed when you uninstall the app, and can be cleared at any time inside the app by removing the movies from your favorites.</p>
+
+<h2>4. Data handled by third-party services</h2>
+<p>Some components of the app belong to third parties and collect information automatically, under their own policies.</p>
+
+<h3>4.1 Advertising — Google AdMob</h3>
+<p>CineScope uses the Google Mobile Ads SDK to show ads. This SDK collects and shares with Google: IP address (which may be used to estimate the device's general location), interactions with the app and ads (for example app launches and taps), diagnostic and performance information, and device identifiers, including the Android advertising ID. The purposes are advertising, analytics and fraud prevention. Data is encrypted in transit (TLS).</p>
+<p>Learn more in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites or apps that use its services</a>.</p>
+
+<h3>4.2 Usage analytics — Firebase Analytics</h3>
+<p>We use Firebase Analytics to understand, in aggregate, how the app is used (for example which screens are viewed) and to improve it. It collects an app instance identifier, usage events, and technical information about the device and the app. More information: <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a>.</p>
+
+<h3>4.3 Movie information — TMDB</h3>
+<p>Titles, synopses, images, cast and where-to-watch data come from the TMDB (The Movie Database) API. As with any internet request, TMDB receives your IP address and technical request data. The app also sends a language and region (derived from your device language) to show the right catalog. We do not send any personal data about you to TMDB. TMDB's policy: <a href="https://www.themoviedb.org/privacy-policy" rel="noopener">themoviedb.org/privacy-policy</a>.</p>
+
+<h3>4.4 Google Play</h3>
+<p>App update prompts and installation are handled by Google Play, under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</p>
+
+<h2>5. Sharing initiated by you</h2>
+<p>When you tap share, the app builds a text and an image of the movie on your device and hands them to the Android share sheet. You choose the destination; we do not receive this content.</p>
+
+<h2>6. Your choices about ads</h2>
+<p>You can reset or delete the advertising ID and limit ad personalization in your Android settings, in Google's ads section. Ads will keep appearing but will no longer be personalized using that identifier.</p>
+
+<h2>7. Data retention and deletion</h2>
+<p>Because there are no user accounts, there is no profile to delete. Local favorites are erased when you uninstall the app. Data handled by Google (AdMob, Firebase, Google Play) and by TMDB follows those services' own policies and controls.</p>
+
+<h2>8. Security</h2>
+<p>The app communicates with the movie API and with the ads and analytics services over secure connections (HTTPS/TLS). Favorites stay on your device.</p>
+
+<h2>9. Children</h2>
+<p>CineScope is not directed to children under 13 and does not knowingly collect information from children.</p>
+
+<h2>10. Your rights</h2>
+<p>Since CineScope does not maintain accounts or store personal data on its own servers, there is no personal data in our custody to access, correct or delete. For information handled by Google or TMDB, please use those companies' channels. If you have questions about this policy or your rights, contact us.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>We may update this policy from time to time. The "last updated" date at the top will change when that happens.</p>
+
+<h2>12. Contact</h2>
+<p>Developer: Christian Alonso<br>Email: <a href="mailto:appcinescope@gmail.com">appcinescope@gmail.com</a></p>
+</section>
+
+<footer>CineScope © 2026</footer>
+</main>
 </body>
 </html>
